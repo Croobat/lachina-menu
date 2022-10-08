@@ -1,15 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <TheTest /> -->
+  <div v-for="categorie in menu" :key="categorie.id" :categorie="categorie">
+    <b>{{ categorie.name }}</b>
+    <div v-for="menuItem in categorie.menuItems" :key="menuItem.id" :menuItem="menuItem">
+      {{ menuItem.name }}
+      <br>
+      <u>{{ menuItem.description }}</u>
+      <br>
+      <i>{{ menuItem.price }}</i>
+      <div v-for="subItem in menuItem.subItems" :key="subItem.id" :menuItem="subItem">
+        {{ subItem.name }}
+        <u>{{ subItem.description }}</u>
+        <i>{{ subItem.price }}</i>
+      </div>
+      <br>
+      <br>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import TheTest from './components/TheTest.vue'
+  import menu from './assets/menu.json'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // TheTest
+  },
+  data() {
+    return {
+      menu: menu
+    }
   }
 }
 </script>

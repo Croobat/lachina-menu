@@ -1,0 +1,99 @@
+[
+  {
+    "id": 10000,
+    "name": "Entradas",
+    "menuItems": [
+      {
+        "id": 10100,
+        "name": "Chicharrón Botanero",
+        "description": "cuero y/o trompa curtida",
+        "subItems": [],
+        "price": 25
+      },
+      {
+        "id": 10200,
+        "name": "Papas preparadas",
+        "description": "cuero y/o trompa curtida",
+        "subItems": [],
+        "price": 25
+      },
+      {
+        "id": 10300,
+        "name": "Doritos",
+        "description": "Ricos Doritos ah vdd",
+        "subItems": [
+          {
+            "id": 10301,
+            "name": "Carnitas, ceviche o buche",
+            "price": 38
+          },
+          {
+            "id": 10302,
+            "name": "Aguachile",
+            "price": 40
+          },
+          {
+            "id": 10302,
+            "name": "Cuero y trompa curtida",
+            "price": 30
+          }
+        ],
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": 20000,
+    "name": "Tostadas",
+    "menuItems": [
+      {
+        "id": 20100,
+        "name": "Adobada",
+        "description": "",
+        "subItems": [],
+        "price": 22
+      },
+      {
+        "id": 20200,
+        "name": "Carnitas",
+        "description": "",
+        "subItems": [],
+        "price": 22
+      },
+      {
+        "id": 20200,
+        "name": "Especial",
+        "description": "Carne, buche y sancochado",
+        "subItems": [],
+        "price": 22
+      }
+    ]
+  },
+  {
+    "id": 30000,
+    "name": "Tacos",
+    "menuItems": [
+      {
+        "id": 30100,
+        "name": "Adobada",
+        "description": "",
+        "subItems": [],
+        "price": 15
+      },
+      {
+        "id": 30200,
+        "name": "Carnitas",
+        "description": "",
+        "subItems": [],
+        "price": 15
+      },
+      {
+        "id": 30200,
+        "name": "Alambre",
+        "description": "Bistek, jamón, salchicha, chile poblano, cebolla y queso",
+        "subItems": [],
+        "price": 18
+      }
+    ]
+  }
+]
