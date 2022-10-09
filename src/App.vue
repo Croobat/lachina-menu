@@ -1,24 +1,17 @@
 <template>
   <!-- <TheTest /> -->
   <div v-for="categorie in menu" :key="categorie.id" :categorie="categorie">
-    <b>{{ categorie.name }}</b>
+    <p class="font-title_cursive">{{ categorie.name }}</p>
     <div v-for="menuItem in categorie.menuItems" :key="menuItem.id" :menuItem="menuItem">
-      {{ menuItem.name }}
-      <br>
-      <u>{{ menuItem.description }}</u>
-      <br>
-      <i>{{ menuItem.price }}</i>
+      <div v-if="menuItem.name" class="font-title">{{ menuItem.name }}</div>
+      <div v-if="menuItem.description" class="font-body">{{ menuItem.description }}</div>
+      <div v-if="menuItem.price" class="font-price">{{ menuItem.price }} $</div>
       <div v-for="subItem in menuItem.subItems" :key="subItem.id" :menuItem="subItem">
-        {{ subItem.name }}
-        <u>{{ subItem.description }}</u>
-        <i>{{ subItem.price }}</i>
+        <p class="font-subBody">{{ subItem.name }}</p>
+        <div v-if="subItem.description" class="font-body">{{ subItem.description }}</div>
+        <div v-if="subItem.price" class="font-price">{{ subItem.price }} $</div>
       </div>
-      <br>
-      <br>
     </div>
-    <br>
-    <br>
-    <br>
   </div>
 </template>
 
@@ -40,12 +33,83 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "Alishba";
+  src: url("./assets/fonts/alishba/AlishbaRegular.otf");
+}
+
+@font-face {
+  font-family: "AlishbaBold";
+  src: url("./assets/fonts/alishba/AlishbaBold.otf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/poppins/poppins-regular.ttf");
+}
+
+@font-face {
+  font-family: "PoppinsSemiBold";
+  src: url("./assets/fonts/poppins/poppins-semibold.ttf");
+}
+
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("./assets/fonts/poppins/poppins-bold.ttf");
+}
+
+@font-face {
+  font-family: "WinnerNarrowExtraBold";
+  src: url("./assets/fonts/winnernarrow/winnernarrow-extrabold.ttf");
+}
+
+:root {
+  font-size: 10px;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.font-title_cursive {
+  font-family: AlishbaBold;
+  font-size: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+.font-title {
+  font-family: PoppinsBold;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.font-body {
+  font-family: PoppinsSemiBold;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.font-subBody {
+  font-family: PoppinsSemiBold;
+  font-size: 1.5rem;
+}
+
+.font-price {
+  font-family: WinnerNarrowExtraBold;
+  font-size: 2.5rem;
+}
+
+.test {
+  border: 1px solid red;
 }
 </style>

@@ -339,8 +339,15 @@
   },
   {
     "id": 8000,
-    "name": "Mariscos (solo fin de semana)",
+    "name": "Mariscos",
     "menuItems": [
+      {
+        "id": 8009,
+        "name": "",
+        "description": "(solo fines de semana)",
+        "subItems": [],
+        "price": null
+      },
       {
         "id": 8010,
         "name": "Tostada",
@@ -363,8 +370,8 @@
     "menuItems": [
       {
         "id": 9010,
-        "name": "Carnitas, buche, sancochado o costilla BBQ",
-        "description": "1 Kg",
+        "name": "1 Kg Carnitas, buche, sancochado o costilla BBQ",
+        "description": "",
         "subItems": [
           {
             "id": 9011,

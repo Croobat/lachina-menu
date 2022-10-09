@@ -1,4 +1,4 @@
-# lachina-menu
+# Menú de Restaurante "Carnitas La China"
 
 ## Project setup
 ```
